@@ -1,0 +1,12 @@
+/*
+############----import de flaticon-----##########
+*/
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+body{
+  height: 200vh;
+}
+html, body { height: 100%;
+background: #f5f4f5;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

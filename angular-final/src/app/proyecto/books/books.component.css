@@ -1,0 +1,33 @@
+.books-container{
+  position: absolute;
+  margin: 100px 0px 0px 0px;
+}
+h1{
+  margin: 50px 0px 0px 200px;
+  color: rgb(13, 128, 132);
+  font-size: 30px;
+  font-weight: 400;
+}
+.books{
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* card */
+.card{
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 20rem;
+  height: 500px;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  margin:20px 0px 0px 150px ;
+  border: none;
+}
+.card img{
+  border-radius: 10px;
+}
+

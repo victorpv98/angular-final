@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <article class="container-fluid">
+    <a class="navbar-brand home" routerLink="home"><i class="fi fi-rr-home"></i>Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <article class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="profile"><i class="fi fi-rr-user"></i>Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="users"><i class="fi fi-rs-users"></i>Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="books"><i class="fi fi-rr-books"></i>Libros</a>
+        </li>
+      </ul>
+      <ul class="session-box">
+        <li class="nav-item">
+          <a class="nav-link active icon" aria-current="page" routerLink="login" *ngIf="!userLogin"><i class="fi fi-rr-portrait" title="Iniciar sesion"></i></a>
+          <a class="nav-link active icon" aria-current="page" routerLink="login" *ngIf="userLogin" (click)="logout()"><i class="fi fi-rr-exit" title="cerrar sesion"></i></a>
+        </li>
+      </ul>
+    </article>
+  </article>
+</nav>

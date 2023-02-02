@@ -1,0 +1,139 @@
+<section class="body-container">
+    <section class="profile-container">
+        <img src="assets/perfil.ico" alt="">
+        <p class="title-name">Luis Alberto</p>
+        <p class="title-profile"><span>Front end Web Developer</span></p>
+    </section>
+    <section class="box-1">
+        <article class="box1-content">
+          <p class="subtitle">Datos Personales</p>
+          <article class="content">
+            <p><span>Nombre</span>: Luis Alberto</p>
+            <p><span>Apellidos</span>: Coaricona Humpiri</p>
+            <p><span>Pais</span>: Peru - Puno 🗺</p>
+            <p><span>Preparacion</span>: Desarrollador Web Front end 💻</p>
+            <p><span>Manejo de Tecnologias </span>: #JavaScript #HTML # CSS #Angular(FrameWork)</p>
+            <p>colaboradores: Sam garcia, Emerzon Chacon</p>
+          </article>
+        </article>
+        <img src="assets/puno.jpg" alt="">
+    </section>
+    <!-- proyectos realizados -->
+    <section class="box-2">
+      <p class="subtitle">Proyectos Realizados</p>
+        <article class="box-2-content">
+          <article class="card-container">
+                <img src="/assets/proyecto1.png" alt="proyecto 1" class="img">
+                <p>
+                  <span>Descripcion:</span>
+                  En este proyecto hicimos una prueba de angular de una pagina web
+                  de programa spacial
+                  <a href="https://github.com/Albert-mrx/reto16.git" target="_blank">repositorio</a>
+                </p>
+          </article>
+
+          <!-- card 2 -->
+          <article class="card-container">
+            <img src="/assets/proyecto1.png" alt="proyecto 1" class="img">
+            <p>
+              <span>Descripcion:</span>
+              En este proyecto hicimos una prueba de angular de una pagina web
+              de programa spacial
+              <a href="https://github.com/Albert-mrx/reto16.git" target="_blank">repositorio</a>
+            </p>
+          </article>
+          <!-- card3 -->
+          <article class="card-container">
+            <img src="/assets/proyecto1.png" alt="proyecto 1" class="img">
+            <p>
+              <span>Descripcion:</span>
+              En este proyecto hicimos una prueba de angular de una pagina web
+              de programa spacial
+              <a href="https://github.com/Albert-mrx/reto16.git" target="_blank">repositorio</a>
+            </p>
+          </article>
+          <!-- card 4 -->
+          <article class="card-container">
+            <img src="/assets/proyecto1.png" alt="proyecto 1" class="img">
+            <p>
+              <span>Descripcion:</span>
+              En este proyecto hicimos una prueba de angular de una pagina web
+              de programa spacial
+              <a href="https://github.com/Albert-mrx/reto16.git" target="_blank">repositorio</a>
+            </p>
+          </article>
+          <!-- card 5 -->
+          <article class="card-container">
+            <img src="/assets/proyecto1.png" alt="proyecto 1" class="img">
+            <p>
+              <span>Descripcion:</span>
+              En este proyecto hicimos una prueba de angular de una pagina web
+              de programa spacial
+              <a href="https://github.com/Albert-mrx/reto16.git" target="_blank">repositorio</a>
+            </p>
+          </article>
+          <!-- card 6 -->
+          <article class="card-container">
+            <img src="/assets/proyecto1.png" alt="proyecto 1" class="img">
+            <p>
+              <span>Descripcion:</span>
+              En este proyecto hicimos una prueba de angular de una pagina web
+              de programa spacial
+              <a href="https://github.com/Albert-mrx/reto16.git" target="_blank">repositorio</a>
+            </p>
+          </article>
+      </article>
+    </section>
+    <!-- box 3 -->
+    <section class="box-3">
+      <h3>Contactame</h3>
+      <section class="contact-container">
+        <!-- formulario de contacto -->
+        <article class="form-container">
+            <form>
+              <p>Formulario de Contacto</p>
+                <!-- input1 -->
+              <mat-form-field class="example-full-width">
+                <mat-label>Nombre</mat-label>
+                <input matInput placeholder="Nombre" [(ngModel)]="nombre">
+              </mat-form-field>
+              <!-- input2 -->
+              <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input [(ngModel)]="email" type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                      placeholder="Ex. pat@example.com">
+                <mat-hint>Errors appear instantly!</mat-hint>
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                  Email is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+              <!-- comentarios -->
+              <mat-form-field class="example-full-width">
+                <mat-label>Escriba su mensaje</mat-label>
+                <textarea [(ngModel)]="mensaje" matInput placeholder="Escriba un mensaje" rows="10" cols="20"></textarea>
+              </mat-form-field>
+              <button mat-raised-button color="primary" (click)="EnviarMensaje()" >Enviar</button>
+            </form>
+        </article>
+        <!-- redes de contacto -->
+        <article class="red-container">
+            <h4>Tecnologias</h4>
+            <article class="icons-container">
+              <i class="fi fi-brands-html5"></i>
+              <i class="fi fi-brands-css3"></i>
+              <i class="fi fi-brands-visual basic"></i>
+              <i class="fi fi-brands-typescript"></i>
+              <i class="fi fi-brands-js"></i>
+            </article>
+            <h4>Redes de Contacto</h4>
+            <article class="icons-red">
+              <a href="https://github.com/Albert-mrx" target="_blank"><i class="fi fi-brands-github"></i></a>
+              <a href="https://www.linkedin.com/in/luis-alberto-coaricona-humpiri-0ba440187/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+            </article>
+        </article>
+      </section>
+    </section>
+</section>

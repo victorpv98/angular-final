@@ -1,0 +1,55 @@
+.navbar{
+  background: #091a2e;
+  padding: .7%;
+  position: fixed;
+  width: 100%;
+}
+.navbar-toggler{
+  background-color: rgb(255, 255, 255);
+}
+.navbar-brand{
+  margin: 0px 10px 0px 30px;
+}
+.icon{
+  background: rgb(20, 87, 141);
+  padding: 9px;
+  border-radius: 5px;
+  width: 40px;
+}
+.home{
+  color: #2bc38a;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+a i{
+  font-size: 20px;
+}
+.home i{
+  color:#35da9d;
+}
+article ul li a {
+  color:aliceblue;
+  font-size: 17px;
+  display: flex;
+  gap:10px;
+}
+article ul li a:hover{
+  color: aquamarine;
+}
+article ul li a i{
+  font-size: 17px;
+}
+.container-fluid{
+  display: flex;
+  gap: 50px;
+}
+.session-box{
+  margin:15px 50px 10px 0px;
+}
+
+.navbar-nav{
+  display: flex;
+  gap:30px;
+}

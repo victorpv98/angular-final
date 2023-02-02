@@ -1,0 +1,21 @@
+<section>
+  <form>
+    <h1><i class="fi fi-sr-user"></i></h1>
+    <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+      <mat-label>User</mat-label>
+      <input matInput #input maxlength="15" [value]="usuario">
+      <mat-hint align="end">{{input.value.length}}/15</mat-hint>
+    </mat-form-field>
+    <!-- password -->
+    <mat-form-field appearance="fill">
+      <mat-label>password</mat-label>
+      <input  matInput [type]="hide ? 'password' : 'text'"
+      [value]="contra"
+      >
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="login()" class="btn">Inicia sesion</button>
+  </form>
+</section>
